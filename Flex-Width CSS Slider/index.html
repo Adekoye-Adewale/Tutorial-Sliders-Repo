@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h2>Width Style</h2>
+        <div class="width__wrapper">
+            <div class="show">
+                <img src="./images/gratisography-silly-spider-free-stock-photo.jpg" alt="img1">
+            </div>
+            <div class="show">
+                <img src="./images/pexels-alex-knight-2599244.jpg" alt="img1">
+            </div>
+            <div class="show">
+                <img src="./images/pexels-anete-lusina-4792731.jpg" alt="img1">
+            </div>
+            <div class="show">
+                <img src="./images/pexels-pixabay-78783.jpg" alt="img1">
+            </div>
+            <div class="show">
+                <img src="./images/pexels-valentin-antonucci-1275393.jpg" alt="img1">
+            </div>
+            <div class="show">
+                <img src="./images/pexels-max-deroin-51415.jpg" alt="img1">
+            </div>
+        </div>
+    </body>
+    <style>
+        img {
+            height: 300px;
+        }
+        .width__wrapper {
+            display: flex;
+            max-width: 800px;
+            max-height: 300px;
+            height: 100%;
+            overflow: hidden;
+            width: 100%;
+            gap: 0;
+        }
+        .show {
+            line-height: 0;
+            border-radius: 20px;
+            width: 150px;
+            min-width: 0;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 300ms linear;
+        }
+        .show:hover {
+            width: 700px;
+        }
+    </style>
+</body>
+</html>
