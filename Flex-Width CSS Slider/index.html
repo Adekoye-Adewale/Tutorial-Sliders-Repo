@@ -7,43 +7,72 @@
 </head>
 <body>
     <body>
-        <h2>Width Style</h2>
-        <div class="width__wrapper">
-            <div class="show">
-                <img src="./images/gratisography-silly-spider-free-stock-photo.jpg" alt="img1">
+        <div class="container">
+            <h2>
+                Width Style
+            </h2>
+            <div class="width__wrapper">
+                <div class="show">
+                    <img src="./images/gratisography-silly-spider-free-stock-photo.jpg" alt="img1">
+                </div>
+                <div class="show">
+                    <img src="./images/pexels-alex-knight-2599244.jpg" alt="img1">
+                </div>
+                <div class="show">
+                    <img src="./images/pexels-anete-lusina-4792731.jpg" alt="img1">
+                </div>
+                <div class="show">
+                    <img src="./images/pexels-max-deroin-51415.jpg" alt="img1">
+                </div>
+                <div class="show">
+                    <img src="./images/pexels-pixabay-78783.jpg" alt="img1">
+                </div>
+                <div class="show">
+                    <img src="./images/pexels-valentin-antonucci-1275393.jpg" alt="img1">
+                </div>
             </div>
-            <div class="show">
-                <img src="./images/pexels-alex-knight-2599244.jpg" alt="img1">
-            </div>
-            <div class="show">
-                <img src="./images/pexels-anete-lusina-4792731.jpg" alt="img1">
-            </div>
-            <div class="show">
-                <img src="./images/pexels-pixabay-78783.jpg" alt="img1">
-            </div>
-            <div class="show">
-                <img src="./images/pexels-valentin-antonucci-1275393.jpg" alt="img1">
-            </div>
-            <div class="show">
-                <img src="./images/pexels-max-deroin-51415.jpg" alt="img1">
+        </div>
+
+        <div class="flex__container">
+            <h2>
+                Flex Style
+            </h2>
+            <div class="flex__wrapper">
+                <div class="flex__show">
+                    <img src="./images/gratisography-silly-spider-free-stock-photo.jpg" alt="img1">
+                </div>
+                <div class="flex__show">
+                    <img src="./images/pexels-alex-knight-2599244.jpg" alt="img1">
+                </div>
+                <div class="flex__show">
+                    <img src="./images/pexels-anete-lusina-4792731.jpg" alt="img1">
+                </div>
+                <div class="flex__show">
+                    <img src="./images/pexels-max-deroin-51415.jpg" alt="img1">
+                </div>
+                <div class="flex__show">
+                    <img src="./images/pexels-pixabay-78783.jpg" alt="img1">
+                </div>
+                <div class="flex__show">
+                    <img src="./images/pexels-valentin-antonucci-1275393.jpg" alt="img1">
+                </div>
             </div>
         </div>
     </body>
     <style>
         img {
-            height: 300px;
+            width: 450px;
+            height: 100%;
         }
         .width__wrapper {
             display: flex;
-            max-width: 800px;
-            max-height: 300px;
-            height: 100%;
+            max-width: 900px;
+            height: 300px;
             overflow: hidden;
             width: 100%;
             gap: 0;
         }
         .show {
-            line-height: 0;
             border-radius: 20px;
             width: 150px;
             min-width: 0;
@@ -53,6 +82,24 @@
         }
         .show:hover {
             width: 700px;
+        }
+        .flex__wrapper {
+            display: flex;
+            gap: 0;
+            max-width: 900px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .flex__show {
+            border-radius: 20px;
+            flex: 0 1 150px;
+            min-width: 0;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 300ms linear;
+        }
+        .flex__show:hover {
+            flex: 1 0 450px;
         }
     </style>
 </body>
